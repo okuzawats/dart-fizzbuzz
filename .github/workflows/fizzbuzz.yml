@@ -1,4 +1,4 @@
-name: Run Dart
+name: FizzBuzz
 
 on:
   pull_request:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  build:
+  fizzbuzz:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -19,4 +19,4 @@ jobs:
         with:
           sdk: ${{ matrix.sdk }}
       - name: Run
-        run: dart helloworld.dart
+        run: dart main.dart
