@@ -1,4 +1,4 @@
-import 'fizzbuzz.dart';
+import 'src/fizzbuzz.dart';
 
 void main() {
   Stream.fromIterable(
